@@ -1,0 +1,8 @@
+server:
+  port: 9999
+
+jwt:
+  # 密钥
+  secret: xxxxx.xxxx.xxxx
+  # 有效期（秒）
+  expire: 86400

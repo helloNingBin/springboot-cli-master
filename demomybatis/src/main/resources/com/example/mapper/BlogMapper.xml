@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.BlogMapper">
+    <select id="selectBlog" resultType="com.example.mapper.Blog">
+        select * from Blog where id = #{id}
+    </select>
+    <select id="selectBlogMap" resultType="hashmap" parameterType="long">
+        <!--parameterType is TypeHandler....将会传入这条语句的参数的类全限定名或别名。这个属性是可选的，因为 MyBatis
+        可以根据语句中实际传入的参数计算出应该使用的类型处理器（TypeHandler），默认值为未设置（unset）。-->
+        select * from Blog where id = #{id}
+    </select>
+
+    <select id="selectBlogSimpleResultMap" resultMap="blogResultMap" parameterType="long">
+        SELECT author,NOW() as selectTimedb from Blog where id = #{id}
+    </select>
+
+    <insert id="insertOne">
+        INSERT INTO Blog(author,date,title,content) values(#{author},#{date},#{title},#{content})
+    </insert>
+    <insert id="insertOneByBean" parameterType="blog">
+        INSERT INTO Blog(author,date,title,content) values(#{b.author},#{b.date},#{b.title},#{b.content})
+    </insert>
+    <insert id="insertMany">
+        INSERT INTO Blog(author,date,title,content) values
+        <foreach collection="objList" item="b" separator=",">
+            <!--separator="," 表示每次迭代用它来隔开-->
+            (#{b.author},#{b.date},#{b.title},#{b.content})
+        </foreach>
+    </insert>
+    <resultMap id="blogResultMap" type="com.example.simpleBean.BlogSimple">
+        <constructor>
+            <arg column="author" javaType="string"></arg>
+            <arg column="selectTimedb" javaType="date"/>
+        </constructor>
+        <result column="author" property="author" javaType="string"/>
+        <!--jdbcType 如果你直接面向 JDBC 编程，你需要对可能存在空值的列指定这个类型。-->
+        <result column="selectTimedb" property="selectTime" javaType="date"/>
+    </resultMap>
+</mapper>

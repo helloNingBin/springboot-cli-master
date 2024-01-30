@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="client" />
+        <module name="common" />
+        <module name="consumer" />
+        <module name="demomybatis" />
+        <module name="myamqpclient" />
+        <module name="openoffice" />
+        <module name="producer" />
+        <module name="server" />
+        <module name="server-a" />
+        <module name="simplerest" />
+        <module name="simpletest" />
+        <module name="springboot-redis" />
+        <module name="springboot-redisson" />
+        <module name="util" />
+        <module name="zookeeperclient" />
+        <module name="zookeepercommon" />
+        <module name="zookeeperservera" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="client" target="8" />
+      <module name="common" target="8" />
+      <module name="consumer" target="8" />
+      <module name="demo-zookeeper" target="8" />
+      <module name="demo-zookeeperr" target="8" />
+      <module name="demomybatis" target="1.8" />
+      <module name="demozokeepeer" target="1.5" />
+      <module name="myamqpclient" target="8" />
+      <module name="openoffice" target="8" />
+      <module name="producer" target="8" />
+      <module name="server" target="1.8" />
+      <module name="server-a" target="1.5" />
+      <module name="simpletest" target="8" />
+      <module name="springboot-rabbitMQ" target="8" />
+      <module name="springboot-redis" target="8" />
+      <module name="springboot-redisson" target="8" />
+      <module name="util" target="1.8" />
+      <module name="zookeeperclient" target="1.8" />
+      <module name="zookeepercommon" target="1.8" />
+      <module name="zookeeperservera" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="demo-zookeeper" options="-parameters" />
+      <module name="demo-zookeeperr" options="-parameters" />
+      <module name="myamqpclient" options="-parameters" />
+      <module name="openoffice" options="-parameters" />
+      <module name="producer" options="-parameters" />
+      <module name="server" options="-parameters" />
+      <module name="server-a" options="-parameters" />
+      <module name="simpletest" options="-parameters" />
+      <module name="springboot-redis" options="-parameters" />
+      <module name="springboot-redisson" options="-parameters" />
+      <module name="util" options="" />
+      <module name="zookeeperclient" options="-parameters" />
+    </option>
+  </component>
+</project>

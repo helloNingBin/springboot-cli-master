@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/netty-tcp-client/client.iml" filepath="$PROJECT_DIR$/netty-tcp-client/client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitMQ/common/common.iml" filepath="$PROJECT_DIR$/springboot-rabbitMQ/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitMQ/consumer/consumer.iml" filepath="$PROJECT_DIR$/springboot-rabbitMQ/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demomybatis/demomybatis.iml" filepath="$PROJECT_DIR$/demomybatis/demomybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demozokeepeer/demozokeepeer.iml" filepath="$PROJECT_DIR$/demozokeepeer/demozokeepeer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitMQ/myamqpclient/myamqpclient.iml" filepath="$PROJECT_DIR$/springboot-rabbitMQ/myamqpclient/myamqpclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openoffice/openoffice.iml" filepath="$PROJECT_DIR$/openoffice/openoffice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitMQ/producer/producer.iml" filepath="$PROJECT_DIR$/springboot-rabbitMQ/producer/producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-tcp-server/server.iml" filepath="$PROJECT_DIR$/netty-tcp-server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simpletest/simpletest.iml" filepath="$PROJECT_DIR$/simpletest/simpletest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springboot-cli-master.iml" filepath="$PROJECT_DIR$/.idea/springboot-cli-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitMQ/springboot-rabbitMQ.iml" filepath="$PROJECT_DIR$/springboot-rabbitMQ/springboot-rabbitMQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redisson/springboot-redisson.iml" filepath="$PROJECT_DIR$/springboot-redisson/springboot-redisson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demozokeepeer/zookeeper-client/zookeeperclient.iml" filepath="$PROJECT_DIR$/demozokeepeer/zookeeper-client/zookeeperclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demozokeepeer/zookeeper-common/zookeepercommon.iml" filepath="$PROJECT_DIR$/demozokeepeer/zookeeper-common/zookeepercommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demozokeepeer/zookeeper-server-a/zookeeperservera.iml" filepath="$PROJECT_DIR$/demozokeepeer/zookeeper-server-a/zookeeperservera.iml" />
+    </modules>
+  </component>
+</project>

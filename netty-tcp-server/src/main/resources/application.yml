@@ -1,0 +1,27 @@
+
+spring:
+  application:
+    name: tcp-server
+
+# tcp
+netty:
+  server:
+    host: 127.0.0.1
+    port: 8610
+    #port: 1883
+    # 传输模式linux上开启会有更高的性能
+    use-epoll: false
+    # use-epoll: true
+
+# 日记配置
+logging:
+  level:
+    # 开启debug日记打印
+    com.netty: debug
+  file:
+    name: /usr/local/tcpServer/logs/tcpServer.out
+  logback:
+    rollingpolicy:
+      max-file-size: 100
+server:
+  port: 5761

@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: rabbitmq-producer
+  rabbitmq:
+    host: 124.71.80.207
+    port: 5672
+    username: guest
+    password: guest
+    virtualHost: /
+    # 手动提交ack消息
+    listener:
+      simple:
+#        acknowledge-mode: manual
+      #     direct:
+        acknowledge-mode: manual
+        retry:
+          enabled: true             # 启用重试机制
+          max-attempts: 3           # 最大重试次数
+          initial-interval: 5000ms  # 初始重试间隔
+          max-interval: 10000ms     # 最大重试间隔
+          multiplier: 2             # 重试间隔的乘数
+    publisher-confirm-type: correlated   #发送信息回调
+
+logging:
+  file:
+    name: E:\temp\log\${spring.application.name}\mylog.out
+  logback:
+    rollingpolicy:
+      max-file-size: 50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

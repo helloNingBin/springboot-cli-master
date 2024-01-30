@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="db.properties">
+        <!-- 启用默认值特性 -->
+        <property name="org.apache.ibatis.parsing.PropertyParser.enable-default-value" value="true"/>
+        <!-- 如果属性 'username' 没有被配置，'username' 属性的值将为 'ut_user' -->
+        <property name="username" value="${username:root}"/>
+    </properties>
+    <typeAliases>
+        <package name="com.example.mapper"/>
+    </typeAliases>
+    <typeHandlers>
+        <typeHandler handler="com.example.typeHandler.StringTyepHandlerExample"/>
+    </typeHandlers>
+    <environments default="development">
+        <environment id="development">
+            <!-- 如果你正在使用 Spring + MyBatis，则没有必要配置事务管理器，因为 Spring 模块会使用自带的管理器来覆盖前面的配置。-->
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://139.159.196.163:3306/test?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=Asia/Shanghai"/>
+                <property name="username" value="root"/>
+                <property name="password" value="FXLNMrtc2952qblCN"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!--  <mapper resource="com/example/mapper/BlogMapper.xml"/>-->
+        <!-- 将包内的映射器接口全部注册为映射器，这样就不用像上面那样，一个一个的去创建了 -->
+         <package name="com.example.mapper"/>
+     </mappers>
+ </configuration>

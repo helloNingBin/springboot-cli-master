@@ -1,0 +1,2 @@
+elasticsearch:
+  url: 192.168.41.128:9200

@@ -1,0 +1,9 @@
+server:
+  port: 9999
+
+minio:
+  endpoint: http://192.168.41.128:20000
+  accessKey: admin
+  secretKey: 12345678
+  secure: false
+  bucketName: test

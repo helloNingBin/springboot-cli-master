@@ -1,0 +1,17 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: tcp-client
+
+# tcp
+netty:
+  client-port: 19999
+  server-ip: 127.0.0.1
+  server-port: 20000
+
+# 日记配置
+logging:
+  level:
+    com.netty: debug
